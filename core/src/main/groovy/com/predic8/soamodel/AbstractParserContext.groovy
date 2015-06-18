@@ -72,6 +72,8 @@ abstract class AbstractParserContext {
       if (schemaLocation.size() == 1) { return schemaLocation }
 
       int separatorIndex = schemaLocation.lastIndexOf(File.separator)
+	  int winSeparatorIndex = schemaLocation.lastIndexOf("/")
+	  separatorIndex = Math.max(separatorIndex, winSeparatorIndex)
       schemaLocation[separatorIndex+1..-1]
   }
 
