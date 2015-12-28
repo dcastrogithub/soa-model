@@ -7,6 +7,7 @@ import com.predic8.schema.restriction.StringRestriction;
 import com.predic8.wsdl.*
 import com.predic8.wsdl.creator.WSDLCreator
 import com.predic8.wsdl.creator.WSDLCreatorContext
+import com.predic8.xml.util.ClasspathResolver
 import org.junit.Assume
 import org.junit.Before
 import org.junit.Test
@@ -21,7 +22,10 @@ class SOARequestCreatorWithCreatedWSDLTest {
   void setUp(){
     Assume.assumeTrue(!System.getenv('OFFLINETESTING'))
     WSDLParser parser = new WSDLParser()
-    wsdl = parser.parse("http://www.thomas-bayer.com/axis2/services/BLZService?wsdl")
+	// Changed due to URL download restriction
+	// wsdl1 = parser.parse('http://www.thomas-bayer.com/axis2/services/BLZService?wsdl')
+	parser.resourceResolver = new ClasspathResolver()
+	wsdl = parser.parse('BLZService-online-downloaded.wsdl')
     addOperation()
   }
 

@@ -156,8 +156,8 @@ Analyze a WSDL or Schema document and generate an HMTL report</description>
 				<configuration>
 					<compilerId>groovy-eclipse-compiler</compilerId>
 					<verbose>true</verbose>
-					<source>1.6</source>
-					<target>1.6</target>
+					<source>1.7</source>
+					<target>1.7</target>
 				</configuration>
 				<dependencies>
 					<dependency>

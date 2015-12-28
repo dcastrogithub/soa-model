@@ -22,8 +22,14 @@ import com.predic8.xml.util.*
 class Operation extends WSDLElement{
 
   public static final JQName ELEMENTNAME = new JQName(Consts.WSDL11_NS, 'operation')
+  
+  enum Direction { ONE_WAY, REQUEST_RESPONSE, SOLICIT_RESPONSE, NOTIFICATION}
+  
   Input input
   Output output
+  Direction direction
+  
+  
   List<Fault> faults = []
 
   Operation(){}
@@ -31,6 +37,7 @@ class Operation extends WSDLElement{
   Operation(String name, Definitions definitions){
     this.name = name
     this.definitions = definitions
+	this.direction = null
   }
   
   protected parseAttributes(token, WSDLParserContext ctx){
@@ -38,12 +45,15 @@ class Operation extends WSDLElement{
   }
 
   protected parseChildren(token, child, WSDLParserContext ctx){
+	
     super.parseChildren(token, child, ctx)
     switch (token.name){
       case Input.ELEMENTNAME :
+	  this.direction = this.direction == null? Direction.ONE_WAY : Direction.SOLICIT_RESPONSE
       input = new Input(definitions : definitions)
       input.parse(token, ctx) ; break
       case Output.ELEMENTNAME:
+	  this.direction = this.direction == null? Direction.NOTIFICATION : Direction.REQUEST_RESPONSE
       output = new Output(definitions: definitions)
       output.parse(token, ctx) ; break
       case Fault.ELEMENTNAME:

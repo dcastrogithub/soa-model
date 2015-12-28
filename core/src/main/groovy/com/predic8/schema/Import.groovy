@@ -22,6 +22,7 @@ import org.slf4j.LoggerFactory
 import com.predic8.soamodel.CreatorContext
 import com.predic8.soamodel.KnownSchemas
 import com.predic8.xml.util.*
+import com.predic8.wsdl.WSDLParser
 
 /**
  * 	SOAP Encoding schema with the namespace 'http://www.w3.org/2003/05/soap-encoding' will 
@@ -46,7 +47,19 @@ class Import extends SchemaComponent {
 			return importSchema = (new SchemaParser(resourceResolver: new ClasspathResolver())).parse(KnownSchemas.docs[namespace])
 		}
 		
-		if(!schemaLocation)	return
+		// Si se realiza un import de tipo HTTP se ignora la importacion y se trata de obtener de pre importaciones locales.
+		if(!schemaLocation || schemaLocation.startsWith('http') || schemaLocation.startsWith('https')){
+			if(schemaLocation){
+				def errorMessage = "Ignoring schema URL import '$schemaLocation'"
+				log.info(errorMessage.toString())
+				WSDLParser.getErrors().add(errorMessage.toString())
+				// if import statement not defines namespace importSchema definition targetNamespace will be provided 
+				if(!namespace)
+					namespace = this.getParent().getTargetNamespace()
+				importSchema = ctx.getPreImportedSchema(this)
+			}
+			return
+		}
 		
 		importSchema = ctx.getImportedSchema(this)
 	}

@@ -25,6 +25,7 @@ class KnownSchemas {
 		'http://www.w3.org/2004/06/xmlmime' : 'xmlmime2004.xsd',
 		'http://schemas.microsoft.com/2003/10/Serialization/' : 'serialization.xsd',
 		'http://schemas.microsoft.com/2003/10/Serialization/Arrays' : 'arrays.xsd',
-		'http://www.w3.org/2005/08/addressing' : 'ws-addr.xsd'
+		'http://www.w3.org/2005/08/addressing' : 'ws-addr.xsd',
+		'http://schemas.xmlsoap.org/wsdl/http/' : 'wsdl11-http.xsd'
 	]
 }

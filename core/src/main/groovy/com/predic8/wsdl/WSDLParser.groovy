@@ -19,6 +19,7 @@ import com.predic8.wsi.*
 class WSDLParser extends AbstractParser{
 	
 	Registry registry
+	static List<String> errors = new ArrayList<String>()
 
 	Definitions parse(String input){
 		super.parse(new WSDLParserContext(input: input))

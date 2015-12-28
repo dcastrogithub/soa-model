@@ -81,6 +81,7 @@ class ExternalResolver extends ResourceResolver {
 	}
 
 	public InputStream resolveAsFile(java.lang.String filename, java.lang.String baseDir) {
+		
 		if(baseDir) {
 			return fixUtf(new FileInputStream(new File(baseDir,filename)))
 		}
@@ -88,11 +89,22 @@ class ExternalResolver extends ResourceResolver {
 	}
 
 	protected resolveViaHttp(url) {
+				
+		// Prohibido obtener recursos via HTTP.
+		// Desde el modulo de importacion ya se evita realizar la peticion para obtener el esquema.
+		// Cualquier elemento contenido en este posible XSD:
+		//    - Se obtendra del XSD local del namespace asociado
+		//    - Sera dummy si no se provee el XSD local
+		throw new UnsupportedOperationException();
+		
+		/*
 		URI uri = new URI(url)
 		uri = uri.normalize()
 		new StringReader(resolveAsString(uri.toString()))
+		*/
 	}
 
+	/*
 	private resolveAsString(url) {
 		try{
 			HttpResponse con = request(url)
@@ -124,5 +136,5 @@ class ExternalResolver extends ResourceResolver {
 			throw rde
 		}
 		response
-	}
+	}*/
 }
