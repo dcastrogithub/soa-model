@@ -16,6 +16,9 @@ import groovy.xml.QName as GQName
 
 import javax.xml.namespace.QName as JQName
 
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+
 import com.predic8.policy.*
 import com.predic8.schema.*
 import com.predic8.soamodel.*
@@ -32,6 +35,7 @@ import com.predic8.xml.util.*
 class Definitions extends WSDLElement{
 
 	public static final JQName ELEMENTNAME = new JQName(Consts.WSDL11_NS, 'definitions')
+	private static final Logger log = LoggerFactory.getLogger(Definitions.class)
 
 	def resourceResolver
 
@@ -153,6 +157,7 @@ class Definitions extends WSDLElement{
 	}
 
 	Element getElement(GQName qname) {
+				
 		if(!qname) return
 		def element
 		(schemas + getSchemaLoadKnownSchemaIfNeeded(qname.namespaceURI) - null).findAll{it.targetNamespace == qname.namespaceURI}.each{ schema ->

@@ -23,6 +23,7 @@ import com.predic8.soamodel.*
 import com.predic8.wsdl.*
 import com.sun.org.apache.bcel.internal.generic.LDIV;
 
+@SuppressWarnings("restriction")
 class WsdlDiffGenerator extends AbstractDiffGenerator{
 
 	private static final Logger log = LoggerFactory.getLogger(WsdlDiffGenerator.class)

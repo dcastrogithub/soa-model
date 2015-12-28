@@ -25,4 +25,10 @@ abstract class Facet extends SchemaComponent{
 	public boolean equals(obj) {
 		obj && getClass() == obj.getClass() && value == obj.value
 	}
+	
+	protected abstract getElementName();
+	
+	public String getFacetName(){
+		getElementName();
+	}
 }

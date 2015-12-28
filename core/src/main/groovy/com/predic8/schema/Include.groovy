@@ -31,10 +31,18 @@ class Include extends SchemaComponent {
 
    protected parseAttributes(token, ctx){
     schemaLocation = token.getAttributeValue( null , 'schemaLocation')
+	
+	int separatorIndex = schemaLocation.lastIndexOf(File.separator)
+	int winSeparatorIndex = schemaLocation.lastIndexOf("/")
+	separatorIndex = Math.max(separatorIndex, winSeparatorIndex)
+	schemaLocation = schemaLocation[separatorIndex+1..-1]
+	
 		if(schema.includedPaths.contains(HTTPUtil.getLocation(schema.baseDir,schemaLocation))) return
 		schema.includedPaths << HTTPUtil.getLocation(schema.baseDir,schemaLocation)
     parseIncludedSchema(ctx)
   }
+   
+   
 
   private parseIncludedSchema(ctx){
     def resource = schema.resourceResolver.resolve(this, schema.baseDir)

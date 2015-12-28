@@ -18,6 +18,7 @@ import com.predic8.ParserImportedSchemaCache
 import com.predic8.schema.Import
 import com.predic8.schema.Schema
 import com.predic8.xml.util.ResourceResolver
+import com.predic8.wsdl.WSDLParser
 
 abstract class AbstractParserContext {
 
@@ -51,6 +52,17 @@ abstract class AbstractParserContext {
         getSchemaCacheKey(importStatement))
   }
 
+  Schema getPreImportedSchema(Import importedSchema){
+	  String cacheKey = getSchemaCacheKey(importedSchema)
+	  Schema importedSchemaCache = importedSchemaCache.getImportedSchemas().get(cacheKey)
+	  if(!importedSchemaCache)
+	  	WSDLParser.getErrors().add(
+		  "Imported schema could not be loaded locally. Expected file:" + extractFileName(importedSchema.schemaLocation) + " with namespace '$importedSchema.namespace'".toString())
+      else
+	  	WSDLParser.getErrors().add("Imported schema '$importedSchema.namespace' replaced with local file ".toString() + extractFileName(importedSchema.schemaLocation))
+	  importedSchemaCache
+  }
+  
   Schema setImportedSchema(Schema schema) {
     importedSchemaCache.addSchema(schema, getSchemaCacheKey(schema))
   }

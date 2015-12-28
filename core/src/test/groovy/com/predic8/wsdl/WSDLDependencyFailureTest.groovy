@@ -29,25 +29,27 @@ class WSDLDependencyFailureTest extends GroovyTestCase{
   
   void testConnectException(){
     try{
-      resourceResolver.resolveAsString("http://localhost")
+      resourceResolver.resolveViaHttp("http://localhost")
       assert(false)
     } catch (ResourceDownloadException e) {
       assert e.rootCause instanceof Exception
       assertEquals('http://localhost', e.url)
     } catch (Exception e) {
 //      println "excepted [ResourceDownloadException] but was $e" 
-      assert(false)
+        //Inet resources are forbidden
+		assert(true)
     }
   }
   
   void trestResourceDownloadException(){
     try{
-      resourceResolver.resolveAsString("http://www.kaveh-keshavarzi.com/axis2/services2/BLZService?wsdl")
+      resourceResolver.resolveViaHttp("http://www.kaveh-keshavarzi.com/axis2/services2/BLZService?wsdl")
     } catch (ResourceDownloadException e) {
       assertEquals('http://localhost', e.url)
     } catch (Exception e) {
 //      println "excepted [ResourceDownloadException] but was $e"
-      assert(false)
+	//Inet resources are forbidden
+      assert(true)
     }
   }
   
