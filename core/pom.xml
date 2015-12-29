@@ -6,9 +6,7 @@
 	<artifactId>soa-model-core</artifactId>
 	<version>1.5.0</version>
 	<packaging>jar</packaging>
-
-
-	<name>Membrane SOA Model</name>
+	<name>PREDIC8-SOA-MODEL-CORE</name>
 	<description>Membrane SOA Model is an open-source toolkit and Java API for WSDL and XML Schema, licensed under ASF 2.0. that can:
 
 Parse, create or modify a WSDL or XML Schema Document from Java

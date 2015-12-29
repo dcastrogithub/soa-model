@@ -3,7 +3,8 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.predic8</groupId>
 	<artifactId>soa-model-distribution</artifactId>
-	<version>1.4.2.5</version>
+	<name>SOA-MODEL-DISTRIBUTION</name>
+	<version>1.5.0</version>
 
 	<dependencies>
 		<dependency>
