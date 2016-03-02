@@ -14,25 +14,31 @@
 
 package com.predic8.wsdl
 
-import org.junit.internal.runners.statements.Fail;
-import com.predic8.xml.util.ExternalResolver;
+import groovy.xml.QName as GQName
 import com.predic8.xml.util.*
 import com.predic8.wsdl.creator.*
+import groovy.xml.MarkupBuilder
 
-class WSDLDependencyFailureTest extends GroovyTestCase{
-  
-  def resourceResolver 
-  
-  void setUp() {
-   resourceResolver = new ExternalResolver()
+class WSDLImportPcvTest extends GroovyTestCase{
+
+  Definitions wsdl
+
+  void setUp(){
+	  def parser = new WSDLParser()
+	  wsdl = parser.parse("src\\test\\resources\\import-pcv\\facturacionService.wsdl")
   }
   
-   void testConnectException(){
-    try{
-      resourceResolver.resolveViaHttp("http://localhost") // Dummy response always
-      assert(true) 
-    } catch (ResourceDownloadException e) {
-      assert(false)
-    }
-  }  
+  void testCreator() {
+    def strWriter = new StringWriter()
+    def creator = new WSDLCreator(builder : new MarkupBuilder(strWriter))
+	try{
+	    creator.createDefinitions(wsdl, new WSDLCreatorContext())
+	    def createdWSDL = new XmlSlurper().parseText(strWriter.toString())
+		assert(false)
+	}
+	catch(Throwable t){
+		assert t.message.contains("Could not find the portType definition")
+	}
+  }
 }
+

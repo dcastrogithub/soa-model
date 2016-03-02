@@ -1,0 +1,2148 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="FacturacionServiceImplService" targetNamespace="http://ws.service.facturacion.pcv.binter.ignos.com/" xmlns:ns1="http://intr.ws.service.facturacion.pcv.binter.ignos.com/" xmlns:ns2="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://ws.service.facturacion.pcv.binter.ignos.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:import location="http://canariasviaja-pre:8080/pcv-ws/services/facturacionService?wsdl=FacturacionService.wsdl" namespace="http://intr.ws.service.facturacion.pcv.binter.ignos.com/">
+    </wsdl:import>
+  <wsdl:binding name="FacturacionServiceImplServiceSoapBinding" type="ns1:FacturacionService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="crearCobro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearCobro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearCobroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarLinea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="eliminarLinea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="eliminarLineaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerZonaTuristica">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerZonaTuristica">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerZonaTuristicaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarReservaSeguro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="actualizarReservaSeguro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="actualizarReservaSeguroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarBanner">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarBanner">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarBannerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarBilletes">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarBilletes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarBilletesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarRolesUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarRolesUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarRolesUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerInfoDocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerInfoDocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerInfoDocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTipoServicio">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTipoServicio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTipoServicioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCupon">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerCupon">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerCuponResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getVersion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="getVersion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getVersionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarZonaTuristica">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarZonaTuristica">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarZonaTuristicaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerSiguienteNumero">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerSiguienteNumero">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerSiguienteNumeroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPersonaReserva">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerPersonaReserva">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerPersonaReservaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDocumentosVentaIntegracion">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerDocumentosVentaIntegracion">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerDocumentosVentaIntegracionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarBanner">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarBanner">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarBannerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarCuponDeDocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="eliminarCuponDeDocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="eliminarCuponDeDocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPrefijoTelefonico">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerPrefijoTelefonico">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerPrefijoTelefonicoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarCondicionadoGeneral">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarCondicionadoGeneral">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarCondicionadoGeneralResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerReservasASincronizarLP">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerReservasASincronizarLP">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerReservasASincronizarLPResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarDestacado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarDestacado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarDestacadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="eliminarPersonasDeDocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="eliminarPersonasDeDocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="eliminarPersonasDeDocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarRoleUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarRoleUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarRoleUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarTipoEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarTipoEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarTipoEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarMejorOferta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarMejorOferta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarMejorOfertaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCuponesInforme">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerCuponesInforme">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerCuponesInformeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarHistorico">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarHistorico">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarHistoricoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarServicioEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarServicioEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarServicioEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="establecerCuponADocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="establecerCuponADocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="establecerCuponADocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDocumentosIdPorReserva">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerDocumentosIdPorReserva">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerDocumentosIdPorReservaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="sincronizarReservaLoroParque">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="sincronizarReservaLoroParque">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="sincronizarReservaLoroParqueResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDestino">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerDestino">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerDestinoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarPlantillaPromo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarPlantillaPromo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarPlantillaPromoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerServiceFeeMargen">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerServiceFeeMargen">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerServiceFeeMargenResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="asignarPersonasADocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="asignarPersonasADocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="asignarPersonasADocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCobros">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarCobros">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarCobrosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTipoServicioPorCodigo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTipoServicioPorCodigo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTipoServicioPorCodigoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarZonaTuristica">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarZonaTuristica">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarZonaTuristicaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarReservaVuelo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="actualizarReservaVuelo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="actualizarReservaVueloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerComprasClientesInforme">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerComprasClientesInforme">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerComprasClientesInformeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarVueloEspacioNegociado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarVueloEspacioNegociado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarVueloEspacioNegociadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCobro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerCobro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerCobroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarAeropuerto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarAeropuerto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarAeropuertoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarEscapadas">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarEscapadas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarEscapadasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarDestino">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarDestino">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarDestinoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarTiposServicio">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarTiposServicio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarTiposServicioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDestacado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarDestacado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarDestacadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTipoEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTipoEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTipoEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerBusquedasClientesInforme">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerBusquedasClientesInforme">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerBusquedasClientesInformeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDestacado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerDestacado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerDestacadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarZonaGeografica">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarZonaGeografica">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarZonaGeograficaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="crearReservaVuelo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearReservaVuelo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearReservaVueloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerReservasACaducar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerReservasACaducar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerReservasACaducarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarServicioEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarServicioEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarServicioEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarZonaTuristica">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarZonaTuristica">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarZonaTuristicaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarServiceFeeMargen">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarServiceFeeMargen">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarServiceFeeMargenResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEmpresasInforme">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerEmpresasInforme">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerEmpresasInformeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarCookie">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarCookie">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarCookieResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="comprobarVuelosEspaciosNegociados">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="comprobarVuelosEspaciosNegociados">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="comprobarVuelosEspaciosNegociadosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPlantillaPromo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerPlantillaPromo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerPlantillaPromoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarLocalizacionEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarLocalizacionEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarLocalizacionEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTiposRegimenAlimenticioPorCodigo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTiposRegimenAlimenticioPorCodigo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTiposRegimenAlimenticioPorCodigoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarServiceFeeMargen">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarServiceFeeMargen">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarServiceFeeMargenResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarTarifaAerea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarTarifaAerea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarTarifaAereaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarEmpresa">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarEmpresa">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarEmpresaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarIcono">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarIcono">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarIconoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarDocumentoDeVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="actualizarDocumentoDeVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="actualizarDocumentoDeVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarEmpresas">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarEmpresas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarEmpresasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarServicesFeesMargenes">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarServicesFeesMargenes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarServicesFeesMargenesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarReservasServiciosInforme">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarReservasServiciosInforme">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarReservasServiciosInformeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarImagenEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarImagenEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarImagenEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTipoHotel">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTipoHotel">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTipoHotelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="crearLineaLibre">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearLineaLibre">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearLineaLibreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioTieneAccesoHotel">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="usuarioTieneAccesoHotel">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="usuarioTieneAccesoHotelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarCupon">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarCupon">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarCuponResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTotalDocumentoVentaSinSeguros">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTotalDocumentoVentaSinSeguros">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTotalDocumentoVentaSinSegurosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="crearReservaSeguro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearReservaSeguro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearReservaSeguroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPersona">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerPersona">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerPersonaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarImagenEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarImagenEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarImagenEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerParamDisponibilidad">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerParamDisponibilidad">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerParamDisponibilidadResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarHotelEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarHotelEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarHotelEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarVuelosEspaciosNegociados">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarVuelosEspaciosNegociados">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarVuelosEspaciosNegociadosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDetalleDocumento">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerDetalleDocumento">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerDetalleDocumentoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCookie">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerCookie">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerCookieResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerAeropuerto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerAeropuerto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerAeropuertoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarDestacado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarDestacado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarDestacadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="incrementaUsoCupon">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="incrementaUsoCupon">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="incrementaUsoCuponResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerBanner">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerBanner">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerBannerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarDocumentoDeVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarDocumentoDeVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarDocumentoDeVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarPlantillasPromo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarPlantillasPromo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarPlantillasPromoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarLinea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="actualizarLinea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="actualizarLineaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="calcularTotalDocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="calcularTotalDocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="calcularTotalDocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarRestriccionesTarifaAerea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarRestriccionesTarifaAerea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarRestriccionesTarifaAereaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarEmpresa">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarEmpresa">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarEmpresaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarCobro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarCobro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarCobroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarTipoHotel">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarTipoHotel">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarTipoHotelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarHotelEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarHotelEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarHotelEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarTiposSeguro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarTiposSeguro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarTiposSeguroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarIcono">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarIcono">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarIconoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarPersonasAsignadasEnDocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarPersonasAsignadasEnDocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarPersonasAsignadasEnDocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="crearHistorico">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearHistorico">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearHistoricoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerAlarmasAEnviar">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerAlarmasAEnviar">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerAlarmasAEnviarResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarCupon">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarCupon">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarCuponResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarLocalizacionEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarLocalizacionEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarLocalizacionEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerSegurosInforme">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerSegurosInforme">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerSegurosInformeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerLineas">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerLineas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerLineasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cambiarPrioridadServiceFeeMargen">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="cambiarPrioridadServiceFeeMargen">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cambiarPrioridadServiceFeeMargenResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarDestino">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarDestino">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarDestinoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDocumentosCupon">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarDocumentosCupon">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarDocumentosCuponResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarBanner">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarBanner">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarBannerResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarPersona">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarPersona">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarPersonaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cancelarReserva">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="cancelarReserva">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cancelarReservaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerZonaGeografica">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerZonaGeografica">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerZonaGeograficaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerImagenEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerImagenEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerImagenEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerReservaSeguro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerReservaSeguro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerReservaSeguroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarCupones">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarCupones">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarCuponesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarReservasAlojamientoInforme">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarReservasAlojamientoInforme">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarReservasAlojamientoInformeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTipoSeguro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTipoSeguro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTipoSeguroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerZonaReservaCochePorAeropuerto">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerZonaReservaCochePorAeropuerto">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerZonaReservaCochePorAeropuertoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerReservaVuelo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerReservaVuelo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerReservaVueloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarPersona">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="actualizarPersona">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="actualizarPersonaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="usuarioTieneAccesoServicio">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="usuarioTieneAccesoServicio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="usuarioTieneAccesoServicioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="cancelarReservaSeguro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="cancelarReservaSeguro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="cancelarReservaSeguroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="actualizarCobro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="actualizarCobro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="actualizarCobroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="duplicarEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="duplicarEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="duplicarEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarTarifaAerea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarTarifaAerea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarTarifaAereaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerPrefijosTelefonicos">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerPrefijosTelefonicos">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerPrefijosTelefonicosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="transformarReservaEnFactura">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="transformarReservaEnFactura">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="transformarReservaEnFacturaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerHotelEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerHotelEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerHotelEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarReservaSeguro">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarReservaSeguro">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarReservaSeguroResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarTarifaAerea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarTarifaAerea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarTarifaAereaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerServicioEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerServicioEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerServicioEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarVuelosEspaciosNegociadosActivos">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarVuelosEspaciosNegociadosActivos">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarVuelosEspaciosNegociadosActivosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerUsuarioAutentificado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerUsuarioAutentificado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerUsuarioAutentificadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarTiposRegimenAlimenticio">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarTiposRegimenAlimenticio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarTiposRegimenAlimenticioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerIcono">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerIcono">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerIconoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDatosContactoMasRecientes">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarDatosContactoMasRecientes">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarDatosContactoMasRecientesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTipoEscapadaPorNombreUrl">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTipoEscapadaPorNombreUrl">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTipoEscapadaPorNombreUrlResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarServicioEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarServicioEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarServicioEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarTipoHotel">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarTipoHotel">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarTipoHotelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="modificarLineaLibre">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modificarLineaLibre">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modificarLineaLibreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarReservaVuelo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarReservaVuelo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarReservaVueloResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarMejoresOfertas">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarMejoresOfertas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarMejoresOfertasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="abonarFactura">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="abonarFactura">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="abonarFacturaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarVueloEspacioNegociado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarVueloEspacioNegociado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarVueloEspacioNegociadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDocumentoVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerDocumentoVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerDocumentoVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="crearLinea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearLinea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearLineaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="transformarPresupuestoEnReserva">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="transformarPresupuestoEnReserva">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="transformarPresupuestoEnReservaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="modificarEstadoEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="modificarEstadoEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="modificarEstadoEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCuponPorCodigo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerCuponPorCodigo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerCuponPorCodigoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerVueloEspacioNegociado">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerVueloEspacioNegociado">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerVueloEspacioNegociadoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerLineasLibresRelacionadas">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerLineasLibresRelacionadas">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerLineasLibresRelacionadasResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerDetalleDocumentoPorReserva">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerDetalleDocumentoPorReserva">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerDetalleDocumentoPorReservaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarTipoHotel">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarTipoHotel">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarTipoHotelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarTipoEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarTipoEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarTipoEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarTipoEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarTipoEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarTipoEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="borrarPlantillaPromo">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="borrarPlantillaPromo">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="borrarPlantillaPromoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarHotelEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarHotelEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarHotelEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerTarifaAerea">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerTarifaAerea">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerTarifaAereaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarLocalizacionesEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarLocalizacionesEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarLocalizacionesEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarIconos">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarIconos">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarIconosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarImagenesEscapada">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarImagenesEscapada">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarImagenesEscapadaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="crearDocumentoDeVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="crearDocumentoDeVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="crearDocumentoDeVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMunicipios">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerMunicipios">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerMunicipiosResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerLineaLibre">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerLineaLibre">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerLineaLibreResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDocumentosDeVenta">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarDocumentosDeVenta">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarDocumentosDeVentaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerCondicionadoGeneral">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerCondicionadoGeneral">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerCondicionadoGeneralResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarRoleUsuario">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarRoleUsuario">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarRoleUsuarioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerMunicipio">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerMunicipio">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerMunicipioResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="guardarReservaCoche">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="guardarReservaCoche">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="guardarReservaCocheResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="obtenerEmpresa">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="obtenerEmpresa">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="obtenerEmpresaResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="buscarDestino">
+      <soap:operation soapAction="" style="document"/>
+      <wsdl:input name="buscarDestino">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="buscarDestinoResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RemoteServiceException">
+        <soap:fault name="RemoteServiceException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FacturacionServiceImplService">
+    <wsdl:port binding="tns:FacturacionServiceImplServiceSoapBinding" name="FacturacionServiceImplPort">
+      <soap:address location="http://canariasviaja-pre:8080/pcv-ws/services/facturacionService"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

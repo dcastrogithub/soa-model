@@ -27,6 +27,7 @@ import com.predic8.schema.Import as SchemaImport
 import com.predic8.schema.Include as SchemaInclude
 import com.predic8.wsdl.Import as WsdlImport
 import com.predic8.wadl.Include as WadlInclude
+import com.predic8.wsdl.WSDLParser
 
 class ExternalResolver extends ResourceResolver {
 
@@ -95,7 +96,15 @@ class ExternalResolver extends ResourceResolver {
 		// Cualquier elemento contenido en este posible XSD:
 		//    - Se obtendra del XSD local del namespace asociado
 		//    - Sera dummy si no se provee el XSD local
-		throw new UnsupportedOperationException();
+		// throw new UnsupportedOperationException(url.toString());
+		
+		def errorMessage = "External resource downloads are not allowed:'$url'. Please download it and include it with main wsdl file."
+		log.info(errorMessage.toString())
+		WSDLParser.getErrors().add(errorMessage.toString())
+		
+		byte[] bytes = "<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:wsdl=\"http://schemas.xmlsoap.org/wsdl/\"></wsdl:definitions>".getBytes("UTF-8");
+		ByteArrayInputStream bais = new ByteArrayInputStream(bytes);
+		return bais;
 		
 		/*
 		URI uri = new URI(url)

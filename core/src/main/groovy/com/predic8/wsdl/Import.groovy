@@ -21,6 +21,7 @@ import com.predic8.xml.util.*
 
 class Import extends WSDLElement {
 
+  public static final String LOCAL_FILE = "LOCAL_FILE";
   public static final JQName ELEMENTNAME = new JQName(Consts.WSDL11_NS, 'import')
   String namespace
   String location
@@ -29,7 +30,13 @@ class Import extends WSDLElement {
   protected parseAttributes(token, WSDLParserContext ctx){
     namespace = token.getAttributeValue(null , 'namespace')
     location = token.getAttributeValue(null , 'location')
-		if(location in ctx.wsdlImports[namespace]) return ctx.importedWSDLs[namespace] 
+		
+	System.out.println("Importing namespace: " + namespace)
+	if(location in ctx.wsdlImports[namespace] || LOCAL_FILE in ctx.wsdlImports[namespace]){
+		System.out.println("Return previously imported WSDL:" + ctx.importedWSDLs);
+		return ctx.importedWSDLs[namespace]
+	}
+	System.out.println("Parsing import for namespace " + namespace + " location " + location)
     parseImport(token, ctx)
   }
 
