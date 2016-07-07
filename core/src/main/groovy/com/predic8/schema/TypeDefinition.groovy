@@ -13,6 +13,9 @@ package com.predic8.schema
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory
+
 import com.predic8.schema.restriction.BaseRestriction;
 import com.predic8.xml.util.PrefixedName
 
@@ -20,6 +23,8 @@ import groovy.xml.*
 
 abstract class TypeDefinition extends SchemaComponent {
 
+	private static final Logger log = LoggerFactory.getLogger(TypeDefinition.class)
+	
 	QName qname
 	List<Attribute> attributes = []
 	List<AttributeGroup> attributeGroups = []
@@ -53,8 +58,11 @@ abstract class TypeDefinition extends SchemaComponent {
 
 	List<Attribute> getAllAttributes(){
 		def attrs = []
+		log.debug(LOG_INDENT + " > Processing attributes")
 		attrs.addAll(attributes)
+		log.debug(LOG_INDENT + " > Processing attributeGroups")
 		attributeGroups.each {
+			log.debug(LOG_INDENT + " > > Recovering attributes from " + it.ref)
 			attrs.addAll(it.allAttributes)
 		}
 		if(!metaClass.hasProperty(this, 'model') || !model) return attrs //simpleType does not have a model

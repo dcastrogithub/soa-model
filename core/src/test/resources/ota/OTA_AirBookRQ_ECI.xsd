@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema targetNamespace="http://www.opentravel.org/OTA/2003/05" xmlns:tns="http://www.opentravel.org/OTA/2003/05" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:include schemaLocation="OTA_AirBookRQ.xsd"/>
+    <xsd:complexType name="OTA_AirBookRQ_VentaAerea">
+        <xsd:sequence>
+            <xsd:element ref="tns:OTA_AirBookRQ"/>
+        </xsd:sequence>
+        <xsd:attributeGroup ref="tns:OTA_PayloadStdAttributes"/>        
+    </xsd:complexType>
+    <xsd:element name="OTA_AirBookRQ_ECI_ConsultarReserva" type="tns:OTA_AirBookRQ_VentaAerea">
+    </xsd:element>
+    <xsd:element name="OTA_AirBookRQ_ECI_CrearPnr" type="tns:OTA_AirBookRQ_VentaAerea">
+    </xsd:element>
+</xsd:schema>

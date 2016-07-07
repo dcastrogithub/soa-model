@@ -37,6 +37,7 @@ abstract class SchemaComponent extends XMLElement{
 
   protected parseAttributes(token, params){
     name = token.getAttributeValue( null , 'name')
+	log.debug(" -> name:" + name)
   }
 
   protected parseChildren(token, child, params){

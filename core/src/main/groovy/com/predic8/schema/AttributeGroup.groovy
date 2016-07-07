@@ -14,11 +14,18 @@ package com.predic8.schema;
 import java.util.List;
 
 import groovy.xml.*
+
 import com.predic8.soamodel.CreatorContext
 import com.predic8.wstool.creator.*
+
 import javax.xml.stream.*
 
+import org.slf4j.Logger
+import org.slf4j.LoggerFactory
+
 class AttributeGroup extends SchemaComponent{
+	
+  private static final Logger log = LoggerFactory.getLogger(AttributeGroup.class)
 
   QName ref
   List<Attribute> attributes = []
@@ -52,12 +59,21 @@ class AttributeGroup extends SchemaComponent{
 
   List<Attribute> getAttributesFromRef(){
     if(!ref) return
+		log.debug(LOG_INDENT + "Return AttributeGroup for:" + ref)
       schema.getAttributeGroup(ref).allAttributes?.flatten()
   }
 
   List<Attribute> getAllAttributes(){
-    def res = attributes ?: attributesFromRef
-    attributeGroups.each { res << it.allAttributes }
+	log.debug(LOG_INDENT + " > > > AtributeGroup Attributes:" + attributes)
+	log.debug(LOG_INDENT + " > > > AtributeGroup Ref:" + ref)
+    def res = attributes.collect() ?: attributesFromRef  ?: []
+	log.debug(LOG_INDENT + " > > > > Flattened attributes:" + res)
+	log.debug(LOG_INDENT + " > > > AtributeGroup attributeGroups:")
+    attributeGroups.each {  
+							def derivedAttrs =  it.allAttributes
+							log.debug(LOG_INDENT + "     <-- " + derivedAttrs)
+							res << derivedAttrs }
+	log.debug(LOG_INDENT + "Merged Attributes:" + res)
     res.flatten()
   }
 

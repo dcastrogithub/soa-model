@@ -193,7 +193,16 @@ class Schema extends SchemaComponent{
   }
   
   AttributeGroup getAttributeGroup(QName ref){
-    allSchemas.attributeGroups.flatten().find{it.name == ref.localPart}
+	log.debug(LOG_INDENT + "GetAttributeGroup for:" + ref)
+    List<AttributeGroup> currentAttributeGroups = allSchemas.attributeGroups
+	
+	if(log.isDebugEnabled()){
+		log.debug(LOG_INDENT + "Groups :")
+		currentAttributeGroups.flatten().each{ log.debug(LOG_INDENT + " -- " + it.name)}
+	}
+	AttributeGroup atg = currentAttributeGroups.flatten().find{it.name == ref.localPart}
+	log.debug(LOG_INDENT + "Found Attribute Group:" + atg)
+	atg
   }
   
   AttributeGroup getAttributeGroup(String name){

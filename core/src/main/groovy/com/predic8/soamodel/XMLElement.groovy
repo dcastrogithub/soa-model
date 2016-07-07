@@ -32,6 +32,8 @@ abstract class XMLElement {
 	 * Static final String NAMESPACE need to be declared. It will be used to choose the right parser for the element.
 	 */
 	protected Map<String, String> namespaces = [:]
+	
+	protected String LOG_INDENT = "                      ";
 
 	XMLElement parent
 
@@ -43,6 +45,7 @@ abstract class XMLElement {
 		while(token.hasNext()) {
 			if(token.startElement) {
 				ctx.parent = this
+				log.debug("Processing " + getElementName() + " child :" + token.name.getLocalPart())
 				parseChildren(token, token.name.getLocalPart(), ctx)
 				if(token.hasNext()) token.next()
 				continue				

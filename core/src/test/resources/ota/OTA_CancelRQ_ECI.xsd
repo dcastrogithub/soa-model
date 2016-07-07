@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><xsd:schema targetNamespace="http://www.opentravel.org/OTA/2003/05" xmlns:tns="http://www.opentravel.org/OTA/2003/05" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:include schemaLocation="OTA_CancelRQ.xsd"/>
+  <xsd:complexType name="OTA_CancelRQ_VentaAerea">
+    <xsd:sequence>
+      <xsd:element ref="tns:OTA_CancelRQ"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="OTA_CancelRQ_ECI_Emision" type="tns:OTA_CancelRQ_VentaAerea"/>
+</xsd:schema>

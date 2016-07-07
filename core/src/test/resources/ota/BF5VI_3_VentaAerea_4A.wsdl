@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions targetNamespace="http://xml.elcorteingles.com" 
+xmlns:AnulacionAereaReply_1_0="http://xml.elcorteingles.com/AEREOANER_1_0A" 
+xmlns:AnulacionAerea_1_0="http://xml.elcorteingles.com/AEREOANEQ_1_0A" 
+xmlns:aws="http://xml.elcorteingles.com" 
+xmlns:consultarreservaaerea_1_0="http://xml.elcorteingles.com/AEREOCREQ_1_0A" 
+xmlns:consultarreservaaereareply_1_0="http://xml.elcorteingles.com/AEREOCRER_1_0A" 
+xmlns:crearpnraereaaerea_1_0="http://xml.elcorteingles.com/AEREOCPRQ_1_0A" 
+xmlns:crearpnraereareply_1_0="http://xml.elcorteingles.com/AEREOCPRR_1_0A" 
+xmlns:emisiontiquetaerea_1_0="http://xml.elcorteingles.com/AEREOEMIQ_1_0A" 
+xmlns:emisiontiquetaereareply_1_0="http://xml.elcorteingles.com/AEREOEMIR_1_0A" 
+xmlns:encolarreservaaereaagencia_1_0="http://xml.elcorteingles.com/AEREOENCQ_1_0A" 
+xmlns:encolarreservaaereaagenciareply_1_0="http://xml.elcorteingles.com/AEREOENCR_1_0A" 
+xmlns:getcondicionestarifa_1_0="http://xml.elcorteingles.com/AEREOGCTRQ_1_0A" 
+xmlns:getcondicionestarifareply_1_0="http://xml.elcorteingles.com/AEREOGCTRS_1_0A" 
+xmlns:presupuestoaerea_1_0="http://xml.elcorteingles.com/AEREOPREQ_1_0A" 
+xmlns:presupuestoaereareply_1_0="http://xml.elcorteingles.com/AEREOPRER_1_0A" 
+xmlns:reservaaerea_1_0="http://xml.elcorteingles.com/AEREORESQ_1_0A" 
+xmlns:reservaaereareply_1_0="http://xml.elcorteingles.com/AEREORESR_1_0A" 
+xmlns:consultarpnr_1_0="http://xml.elcorteingles.com/AEREOPNRQ_1_0A" 
+xmlns:consultarpnrreply_1_0="http://xml.elcorteingles.com/AEREOPNRR_1_0A" 
+xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" 
+xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" 
+xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
+xmlns:xsdOTA="http://www.opentravel.org/OTA/2003/05">
+    <wsdl:documentation>
+        <wsdl:appinfo source="WMQI_APPINFO">
+            <MRWSDLAppInfo imported="true">
+                <binding hasEncoding="false" imported="true" name="elcorteinglesWebServicesBinding" originalBindingStyle="document"/>
+            </MRWSDLAppInfo>
+        </wsdl:appinfo>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="elcorteinglesWebServicesBinding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+    <wsdl:types>
+        <xsd:schema>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirPriceRQ.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirBookRQ.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirBookRS.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirPriceRS.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirDemandTicketRQ.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirDemandTicketRS.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_CancelRQ.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_CancelRS.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirBookModifyRQ.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirBookRS.xsd">
+            </xsd:import>
+
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirRulesRQ.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirRulesRS.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirBookRQ_ECI.xsd">
+            </xsd:import>
+            <xsd:import namespace="http://www.opentravel.org/OTA/2003/05" schemaLocation="OTA_AirBookModifyRQ_ConsultaPNR.xsd">
+            </xsd:import>
+            </xsd:schema>
+        <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://xml.elcorteingles.com">
+		</xsd:schema>
+            
+</wsdl:types>
+
+    <wsdl:message name="ReservaAerea_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookRQ" name="ReservaAerea_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="ReservaAereaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookRS" name="ReservaAereaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="PresupuestoAerea_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirPriceRQ" name="PresupuestoAerea_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="PresupuestoAereaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirPriceRS" name="PresupuestoAereaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="EmisionTiquetAerea_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirDemandTicketRQ" name="EmisionTiquetAerea_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="EmisionTiquetAereaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirDemandTicketRS" name="EmisionTiquetAereaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="AnulacionAerea_1_0">
+        <wsdl:part element="xsdOTA:OTA_CancelRQ" name="AnulacionAerea_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="AnulacionAereaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_CancelRS" name="AnulacionAereaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="EncolarReservaAereaAgencia_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookModifyRQ" name="EncolarReservaAereaAgencia_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="EncolarReservaAereaAgenciaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookRS" name="EncolarReservaAereaAgenciaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="ConsultarReservaAerea_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookRQ_ECI_ConsultarReserva" name="ConsultarReservaAerea_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="ConsultarReservaAereaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookRS" name="ConsultarReservaAereaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="CrearPnrAerea_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookRQ_ECI_CrearPnr" name="CrearPnrAerea_1_0"/>
+    </wsdl:message>
+    <wsdl:message name="CrearPnrAereaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirBookRS" name="CrearPnrAereaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="GetCondicionesTarifa_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirRulesRQ" name="GetCondicionesTarifa_1_0"/>
+    </wsdl:message>
+    <wsdl:message name="GetCondicionesTarifaReply_1_0">
+        <wsdl:part element="xsdOTA:OTA_AirRulesRS" name="GetCondicionesTarifaReply_1_0"/>
+    </wsdl:message>
+
+    <wsdl:message name="ConsultarPNR_1_0">
+    	<wsdl:part name="ConsultarPNR_1_0" element="xsdOTA:OTA_AirBookModifyRQ_ConsultaPNR"></wsdl:part>
+    </wsdl:message>
+    <wsdl:message name="ConsultarPNRReply_1_0">
+    	<wsdl:part name="ConsultarPNRReply_1_0" element="xsdOTA:OTA_AirBookRS"></wsdl:part>
+    </wsdl:message>
+   
+    <wsdl:portType name="elcorteinglesWebServicesPT">
+
+        <wsdl:operation name="ReservaAerea">
+            <wsdl:input message="aws:ReservaAerea_1_0"/>
+            <wsdl:output message="aws:ReservaAereaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="PresupuestoAerea">
+            <wsdl:input message="aws:PresupuestoAerea_1_0"/>
+            <wsdl:output message="aws:PresupuestoAereaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="EmisionTiquetAerea">
+            <wsdl:input message="aws:EmisionTiquetAerea_1_0"/>
+            <wsdl:output message="aws:EmisionTiquetAereaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="AnulacionAerea">
+            <wsdl:input message="aws:AnulacionAerea_1_0"/>
+            <wsdl:output message="aws:AnulacionAereaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="EncolarReservaAereaAgencia">
+            <wsdl:input message="aws:EncolarReservaAereaAgencia_1_0"/>
+            <wsdl:output message="aws:EncolarReservaAereaAgenciaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="ConsultarReservaAerea">
+            <wsdl:input message="aws:ConsultarReservaAerea_1_0"/>
+            <wsdl:output message="aws:ConsultarReservaAereaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="CrearPnrAerea">
+            <wsdl:input message="aws:CrearPnrAerea_1_0"/>
+            <wsdl:output message="aws:CrearPnrAereaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="GetCondicionesTarifa">
+            <wsdl:input message="aws:GetCondicionesTarifa_1_0"/>
+            <wsdl:output message="aws:GetCondicionesTarifaReply_1_0"/>
+        </wsdl:operation>
+
+        <wsdl:operation name="ConsultarPNR">
+        	<wsdl:input message="aws:ConsultarPNR_1_0"></wsdl:input>
+        	<wsdl:output message="aws:ConsultarPNRReply_1_0"></wsdl:output>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="elcorteinglesWebServicesBinding" type="aws:elcorteinglesWebServicesPT">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="ReservaAerea">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREORESR_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="PresupuestoAerea">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOPREQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="EmisionTiquetAerea">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOEMIQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="AnulacionAerea">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOANUQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="EncolarReservaAereaAgencia">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOENCQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="ConsultarReservaAerea">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOCREQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="CrearPnrAerea">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOCPRQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+
+        <wsdl:operation name="GetCondicionesTarifa">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOGCTRQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        
+        <wsdl:operation name="ConsultarPNR">
+            <soap:operation soapAction="http://webservices.elcorteingles.com/AEREOPNRQ_1_0A"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        
+    </wsdl:binding>
+    <wsdl:service name="elcorteinglesWebServices">
+        <wsdl:port binding="aws:elcorteinglesWebServicesBinding" name="elcorteinglesWebServicesPort">
+            <soap:address location="https://test.webservices.elcorteingles.com"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>
